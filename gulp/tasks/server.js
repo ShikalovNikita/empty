@@ -4,7 +4,6 @@ var gulp = require('gulp'),
 	config = require('../config');
 
 gulp.task('server',function() {
-	setTimeout(function(){
 	server.init({
 		server: {
 			baseDir: !config.production ? [config.dest.root, config.src.root] : config.dest.root,
@@ -29,7 +28,6 @@ gulp.task('server',function() {
 		online: Boolean(util.env.tunnel),
 		tunnel: util.env.tunnel || null
 	});
-	}, 2000);
 });
 
 module.exports = server;

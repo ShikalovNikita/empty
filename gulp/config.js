@@ -44,7 +44,7 @@ var config = {
 	},
 	logEnv: function() {
 		util.log(
-			'Enviroment:',
+			'Environment:',
 			util.colors.white.bgRed(' ' + process.env.NODE_ENV + ' ')
 		);
 	},
