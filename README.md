@@ -1,4 +1,4 @@
-# Init_Workplace v4.0.1
+# Init_Workplace v4.2
 Шаблон помогает быстро начать вёрстку проекта.
 
 Перед началом работы нужно установить зависимости:
@@ -6,23 +6,17 @@
 npm install
 ```
 
-Удобнее через [Yarn](https://yarnpkg.com) (здесь и далее идентичные команды — парами, выбирайте, что нравится больше):
-```bash
-yarn
-```
-
-
-## Шаблонизация
+## Templates
 Шаблоны собираются из папки `templates` с помощью [Nunjucks]. Составные части лежат в `partials`. Основной шаблон лежит в `layouts/_layout.html`.
 
-## Стили
+## CSS
 Верстаются в `src/sass/_main.sass` и `src/sass/_common.sass`, компилируются в `build/css/app.css`. Миксины и сбросы стилей указаны в файлах `src/sass/helpers/_mixins.sass` и `src/sass/helpers/_reset.sass`
 
-### Шрифты
-Файлы шрифтов кладутся в папку `src/fonts`. И подключаются через миксин font-face.
+## JS
+Установлен Babel, [GreenSock](https://greensock.com) (для анимаций)
 
-## Скрипты
-Можно писать на es2015 — подключен и работает Babel. Включен jQuery 3. Установлен Bower для удобной установки JS библиотек.
+## Flags
+* `gulp --tunnel=[name]` or `gulp server --tunnel [name]` - Запускает Develop-сервер и позволяет легко получить доступ через прокси на удаленной машине (Powered by [Localtunnel.me](https://localtunnel.me/)). Сервис будет доступен по адресу `[name].localtunnel.me`.
 
-## Авторы
+## Authors
 [Никита Шикалов](https://github.com/ShikalovNikita).
