@@ -3,9 +3,3 @@ node_modules
 .DS_Store
 
 .idea
-
-gulpfile_old.js
-
-app
-
-build
