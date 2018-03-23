@@ -1,5 +1,5 @@
-import {TweenLite} from 'gsap';
+// import {TweenLite} from 'gsap';
 
-let photo = document.getElementsByTagName('img');
+// let photo = document.getElementsByTagName('img');
 
-TweenLite.to(photo,2, {width:"300px", height:"150px"});
+// TweenLite.to(photo,2, {width:"300px", height:"150px"});
